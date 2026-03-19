@@ -1,0 +1,122 @@
+body {
+    background: url('../img/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.container-glass {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-bottom: 2rem;
+}
+
+/* Estilos para el encabezado de la página */
+.page-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+/* Personalización de DataTables Responsive */
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control {
+    position: relative;
+    padding-left: 35px !important;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before {
+    top: 50% !important;
+    left: 8px !important;
+    height: 20px !important;
+    width: 20px !important;
+    margin-top: -10px !important;
+    display: block !important;
+    position: absolute !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 50% !important;
+    box-shadow: none !important;
+    box-sizing: content-box !important;
+    text-align: center !important;
+    text-indent: 0 !important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f055' !important;
+    /* fa-plus-circle */
+    background-color: #007bff !important;
+    line-height: 20px !important;
+    font-size: 14px !important;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th.dtr-control:before {
+    content: '\f056' !important;
+    /* fa-minus-circle */
+    background-color: #dc3545 !important;
+}
+
+/* Estilo de la fila expandida (Child row) */
+table.dataTable>tbody>tr.child ul.dtr-details {
+    display: block !important;
+    width: 100% !important;
+    list-style-type: none !important;
+    padding: 1rem !important;
+    margin: 0 !important;
+}
+
+table.dataTable>tbody>tr.child ul.dtr-details>li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+    padding: 8px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    text-align: left !important;
+}
+
+table.dataTable>tbody>tr.child ul.dtr-details>li:last-child {
+    border-bottom: none !important;
+}
+
+table.dataTable>tbody>tr.child span.dtr-title {
+    font-weight: 700 !important;
+    min-width: 140px !important;
+    display: inline-block !important;
+    color: #495057 !important;
+}
+
+table.dataTable>tbody>tr.child span.dtr-data {
+    display: inline-block !important;
+}
+
+/* Botones dentro de la tabla */
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8125rem;
+    border-radius: 4px;
+}
+
+.btn-teal {
+    background-color: #008080 !important;
+    color: white !important;
+}
+
+.btn-teal:hover {
+    background-color: #006666 !important;
+    color: white !important;
+}
+
+/* Alineación de botones de reporte DataTables */
+.dt-buttons {
+    margin-bottom: 1rem !important;
+    float: left !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+.dt-button {
+    margin-right: 0.5rem !important;
+}
